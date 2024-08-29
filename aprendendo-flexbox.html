@@ -6,8 +6,12 @@
     <title>layout flexiveis com flexbox</title>
     <style>
         section {
+            /*container flex*/
             display: flex;
-            justify-content: flex-start; /*como os items vao se comportar*/
+            flex-direction: row ;
+            flex-wrap: wrap;
+            justify-content: flex-start; /*alinhamento da diracao*/
+            align-items: stretch; /*o contrario da direcao*/
 
             width: 700px;
             height: 500px;
@@ -17,6 +21,9 @@
         }
 
         article {
+            display: flex;
+            justify-content: center;/**/
+            align-items: center;
             width: 100px;
             height: 100px;
             margin-bottom: 10px;
@@ -30,10 +37,19 @@
   </head>
 <body>
 
+   <!--container- flex -->
     <section>
-        <article></article>
-        <article></article>
-        <article></article>
+        <!--container- flex -->
+        <article>item 1</article>
+        <article>item 2</article>
+        <article>item 3</article>
+        <article>item 4</article>
+        <article>item 5</article>
+        <article>item 6</article>
+        <article>item 7</article>
+        <article>item 8</article>
+        <article>item 9</article>
+        <article>item 10</article>
     </section>   
 
   </body>
